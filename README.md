@@ -10,7 +10,7 @@ callback为所有小格都输入完成触发的回调函数,如果你想再输�
 
 回调函数有一个参数,是你输入的内容字符串
 
-3.用jquery的attr方法获取div的"value"属性就可以得到输入的值,就像这样: $("#id").attr("value")
+3.用jquery的attr方法获取div的"value"属性就可以得到输入的值,如果没有输入完毕,值为undefined!就像这样: $("#id").attr("value")
 
 ## 实例化参数option详解
 

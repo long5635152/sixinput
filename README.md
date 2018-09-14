@@ -4,7 +4,7 @@
 ### 使用方式:
 1.新建一个div,取任意id
 
-2.在需要的地方new Sixinput("#id",option,callback),"#id"为新建div的id
+2.在需要的地方var myinput = new Sixinput("#id",option,callback),"#id"为新建div的id
 
 callback为所有小格都输入完成触发的回调函数,如果你想再输入完后自动发送一个请求验证输入内容,可以在这个回调函数里写!
 

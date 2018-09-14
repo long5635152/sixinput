@@ -12,6 +12,8 @@ callback为所有小格都输入完成触发的回调函数,如果你想再输�
 
 3.用jquery的attr方法获取div的"value"属性就可以得到输入的值,如果没有输入完毕,值为undefined!就像这样: $("#id").attr("value")
 
+4.如果你还是不会使用,请参考代码中的index.html
+
 ## 实例化参数option详解
 
 ### option.count

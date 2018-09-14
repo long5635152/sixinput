@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="jquery-1.11.3.min.js"></script>
+  <script src="sixinput.js"></script>
+</head>
+<body>
+  <div id="sixinput"></div>
+</body>
+<script>
+  var my = new Sixinput("#sixinput", {
+    width: 30,
+    height: 30,
+    align: "left",
+    backgroundColor: "pink",
+    count: 3
+  });
+  my.onlyread("red"); //设置为不可写,参数为不可写后的input背景色
+  my.writeable(); // 设置为可写
+</script>
+</html>

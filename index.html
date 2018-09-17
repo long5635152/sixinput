@@ -15,13 +15,13 @@
   var my = new Sixinput("#sixinput", {
     width: 30,
     height: 30,
-    align: "left",
-    backgroundColor: "pink",
-    count: 3
+    align: "center",
+    count: 7,
+    type: "password"
   }, function (val) {
 	console.log("所有框都输入了,值为" + val)
   });
-  my.onlyread("red"); //设置为不可写,参数为不可写后的input背景色
-  my.writeable(); // 设置为可写
+  //my.onlyread(); //设置为不可写,参数为不可写后的input背景色,过不写参数,默认颜色为"#eee"
+  //my.writeable(); // 设置为可写
 </script>
 </html>

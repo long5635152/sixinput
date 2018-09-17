@@ -4,9 +4,15 @@
 ### 使用方式:
 1.新建一个div,取任意id
 
-2.在需要的地方new Sixinput("#id",option,callback),"#id"为新建div的id
+2.在需要的地方var myinput = new Sixinput("#id",option,callback),"#id"为新建div的id
 
 callback为所有小格都输入完成触发的回调函数,如果你想再输入完后自动发送一个请求验证输入内容,可以在这个回调函数里写!
+
+回调函数有一个参数,是你输入的内容字符串
+
+3.用jquery的attr方法获取div的"value"属性就可以得到输入的值,如果没有输入完毕,值为undefined!就像这样: $("#id").attr("value")
+
+4.如果你还是不会使用,请参考代码中的index.html
 
 ## 实例化参数option详解
 
@@ -75,17 +81,17 @@ callback为所有小格都输入完成触发的回调函数,如果你想再输�
 
 默认值:"#fff"
 
-##方法详解
-###myinput.clear()
+## 方法详解
+### myinput.clear()
 
 描述:清空所以输入框
 
-###myinput.onlyread(color)
+### myinput.onlyread(color)
 
 描述:所以输入框禁止输入
 
 参数:禁用后的文本框颜色
 
-###myinput.writeable()
+### myinput.writeable()
 
 描述:所以输入框恢复输入,背景颜色恢复之前配置的颜色

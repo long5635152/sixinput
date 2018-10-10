@@ -33,11 +33,12 @@ Sixinput.prototype = {
           } else {
             $(this).val("")
           }
+          This.finalVal()
         }
       }
       item.oninput = function (e) {
         if ($(this).val() != "") {
-          if (!this.value.match(/\d/) && this.value.length == 1) {
+          if (!this.value.match(/\d/)) {
             this.value = "";
             return;
           }

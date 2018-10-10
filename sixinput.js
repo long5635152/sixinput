@@ -112,5 +112,8 @@ Sixinput.prototype = {
           $(item).removeAttr("disabled");
           $(item).css("backgroundColor", This.options.backgroundColor);
       })
+  },
+  autofocus: function() {
+      $(this.ele).children("input").eq(0).focus();
   }
 }

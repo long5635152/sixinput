@@ -81,6 +81,16 @@ callback为所有小格都输入完成触发的回调函数,如果你想再输�
 
 默认值:"#fff"
 
+### option.type
+
+可选值: "text","password"
+
+描述:文本框的类型,如果值为text,则文本框为明文,如果值为"password",则文本框为暗文
+
+类型: string
+
+默认值:"password"
+
 ## 方法详解
 ### myinput.clear()
 
@@ -90,7 +100,7 @@ callback为所有小格都输入完成触发的回调函数,如果你想再输�
 
 描述:所以输入框禁止输入
 
-参数:禁用后的文本框颜色
+参数:禁用后的文本框颜色,默认值为"#eee"
 
 ### myinput.writeable()
 

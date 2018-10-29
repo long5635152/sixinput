@@ -44,9 +44,9 @@ Sixinput.prototype = {
             return;
           }
           if (this.value.length > 1) {
-            this.value = this.value.replace(e.data, "");
+            this.value = this.value.replace(e.target.value, "");
           } else {
-            $(this).data("value", e.data)
+            $(this).attr("val", e.target.value)
           }
           if (This.options.type == "password") {
             this.value = "●";
@@ -87,7 +87,7 @@ Sixinput.prototype = {
     if (ok) {
       var value = "";
       $(this.ele).children("input").each(function (index, item) {
-        value += $(item).data("value");
+        value += $(item).attr("val");
       })
       $(this.ele).prop("value", value)
       if (this.callback) {
